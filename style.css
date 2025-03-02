@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    background-image: url('images/5.jpg'); /* Ronaldo-themed background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Match the header */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #e50914; /* Ronaldo's Manchester United/Portugal red */
+    color: #fff;
+}
+
+/* Main Content Styles */
+main {
+    flex-grow: 1; /* Push footer to the bottom if content is short */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+/* Achievements Section */
+#achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#achievements ul li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#achievements ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+/* Fun Facts Section */
+#fun-facts {
+    margin-top: 50px;
+}
+
+#fun-facts ul {
+    list-style: disc;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+#fun-facts ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: auto; /* Ensure the footer sticks to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
